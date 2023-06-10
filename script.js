@@ -31,21 +31,21 @@ const lookup = {
   ",": ",",
 };
 
-function rot13(encodedStr) {
+function rot13(Str) {
   let decodedArr = []; // Your Result goes here
-       for(let i=0;i<encodedStr.length;i++)
+       for(let i=0;i<Str.length;i++)
 		   {
-			   if(lookup[encodedStr[i]]==undefined)
+			   if(lookup[Str[i]]==undefined)
 			   {
-				   decodedArr.push(encodedStr[i])
+				   decodedArr.push(Str[i])
 			   }
 			   else
 			   {
-				   decodedArr.push(lookup[encodedStr[i]])
+				   decodedArr.push(lookup[Str[i]])
 			   }
 		   }
 
-  return decodedArr.join(""); //return decodedArr
+  return decodedArr.join(" "); //return decodedArr
 }
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
