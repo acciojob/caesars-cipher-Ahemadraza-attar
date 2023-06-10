@@ -33,7 +33,7 @@ const lookup = {
 
 function rot13(Str) {
   let decodedArr = []; // Your Result goes here
-       for(let i of Str)
+       for(let i in Str)
 		   {
 			   if(lookup[Str[i]]==undefined)
 			   {
