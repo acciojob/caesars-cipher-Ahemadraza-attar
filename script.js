@@ -31,17 +31,17 @@ const lookup = {
   ",": ",",
 };
 
-function rot13(Str) {
+function rot13(str) {
   let decodedArr = []; // Your Result goes here
-       for(let i in Str)
+       for(let i in str)
 		   {
-			   if(lookup[Str[i]]==undefined)
+			   if(lookup[str[i]]==undefined)
 			   {
-				   decodedArr.push(Str[i])
+				   decodedArr.push(str[i])
 			   }
 			   else
 			   {
-				   decodedArr.push(lookup[Str[i]])
+				   decodedArr.push(lookup[str[i]])
 			   }
 		   }
 
@@ -50,7 +50,7 @@ function rot13(Str) {
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
-console.log(rot13("SERR YBIR? NPPVBWBO"));
+//console.log(rot13("SERR YBIR? NPPVBWBO"));
 
 // Do not change this line
 window.rot13 = rot13;
